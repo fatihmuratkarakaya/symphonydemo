@@ -79,12 +79,12 @@ This command will pull the necessary Docker images and start the containers in d
 
 
 ### Jenkins Pipeline
-The Jenkins pipeline is defined in the Jenkinsfile located at the root of the repository. This pipeline automates the following stages:
+- The Jenkins pipeline is defined in the Jenkinsfile located at the root of the repository. This pipeline automates the following stages:
 
-- Checkout: Clones the PHP project from GitHub.
-- Install Dependencies: Uses Composer to install PHP dependencies.
-- Run Unit Tests: Executes PHPUnit tests.
-- SonarQube Analysis: Performs code quality analysis using SonarQube.
+Checkout: Clones the PHP project from GitHub.
+Install Dependencies: Uses Composer to install PHP dependencies.
+Run Unit Tests: Executes PHPUnit tests.
+SonarQube Analysis: Performs code quality analysis using SonarQube.
 
 
 
@@ -95,10 +95,10 @@ The Jenkins pipeline is defined in the Jenkinsfile located at the root of the re
 - COMPOSER_HOME: Specifies the Composer home directory.
 - SONAR_TOKEN: Retrieves the SonarQube token from Jenkins credentials.
 - Stages:
-- Checkout: Clones the Symfony demo project from GitHub.
-- Install Dependencies: Uses Composer Docker image to install PHP dependencies.
-- Run Unit Tests: Executes PHPUnit tests within the Composer Docker container.
-- SonarQube Analysis: Runs SonarScanner to perform code quality checks.
+Checkout: Clones the Symfony demo project from GitHub.
+Install Dependencies: Uses Composer Docker image to install PHP dependencies.
+Run Unit Tests: Executes PHPUnit tests within the Composer Docker container.
+SonarQube Analysis: Runs SonarScanner to perform code quality checks.
 
 
 ### Usage
