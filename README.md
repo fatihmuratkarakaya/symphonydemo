@@ -92,8 +92,8 @@ SonarQube Analysis: Performs code quality analysis using SonarQube.
 
 - Agent: Runs the pipeline on any available Jenkins agent.
 - Environment Variables:
-- COMPOSER_HOME: Specifies the Composer home directory.
-- SONAR_TOKEN: Retrieves the SonarQube token from Jenkins credentials.
+COMPOSER_HOME: Specifies the Composer home directory.
+SONAR_TOKEN: Retrieves the SonarQube token from Jenkins credentials.
 - Stages:
 Checkout: Clones the Symfony demo project from GitHub.
 Install Dependencies: Uses Composer Docker image to install PHP dependencies.
