@@ -88,7 +88,7 @@ SonarQube Analysis: Performs code quality analysis using SonarQube.
 
 
 
-- Key Points:
+-> Key Points:
 
 - Agent: Runs the pipeline on any available Jenkins agent.
 - Environment Variables:
