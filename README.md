@@ -81,28 +81,28 @@ This command will pull the necessary Docker images and start the containers in d
 ### Jenkins Pipeline
 The Jenkins pipeline is defined in the Jenkinsfile located at the root of the repository. This pipeline automates the following stages:
 
-Checkout: Clones the PHP project from GitHub.
-Install Dependencies: Uses Composer to install PHP dependencies.
-Run Unit Tests: Executes PHPUnit tests.
-SonarQube Analysis: Performs code quality analysis using SonarQube.
+- Checkout: Clones the PHP project from GitHub.
+- Install Dependencies: Uses Composer to install PHP dependencies.
+- Run Unit Tests: Executes PHPUnit tests.
+- SonarQube Analysis: Performs code quality analysis using SonarQube.
 
 
 
-Key Points:
+- Key Points:
 
-Agent: Runs the pipeline on any available Jenkins agent.
-Environment Variables:
-COMPOSER_HOME: Specifies the Composer home directory.
-SONAR_TOKEN: Retrieves the SonarQube token from Jenkins credentials.
-Stages:
-Checkout: Clones the Symfony demo project from GitHub.
-Install Dependencies: Uses Composer Docker image to install PHP dependencies.
-Run Unit Tests: Executes PHPUnit tests within the Composer Docker container.
-SonarQube Analysis: Runs SonarScanner to perform code quality checks.
+- Agent: Runs the pipeline on any available Jenkins agent.
+- Environment Variables:
+- COMPOSER_HOME: Specifies the Composer home directory.
+- SONAR_TOKEN: Retrieves the SonarQube token from Jenkins credentials.
+- Stages:
+- Checkout: Clones the Symfony demo project from GitHub.
+- Install Dependencies: Uses Composer Docker image to install PHP dependencies.
+- Run Unit Tests: Executes PHPUnit tests within the Composer Docker container.
+- SonarQube Analysis: Runs SonarScanner to perform code quality checks.
 
 
 ### Usage
-Start Docker Services:
+- Start Docker Services:
 
 Ensure all Docker services are up and running.
 
@@ -110,11 +110,11 @@ Ensure all Docker services are up and running.
 docker-compose up -d
 ```
 
-Access Jenkins:
+- Access Jenkins:
 
 Open your browser and navigate to http://localhost:8080. Follow the initial Jenkins setup instructions.
 
-Configure Jenkins Credentials:
+- Configure Jenkins Credentials:
 
 Navigate to Manage Jenkins > Manage Credentials.
 Add a new credential with the ID jenkins-token containing your SonarQube token.
@@ -122,10 +122,10 @@ Create a New Pipeline Job:
 
 In Jenkins, create a new pipeline job.
 Point the pipeline to the Jenkinsfile in this repository.
-Run the Pipeline:
+- Run the Pipeline:
 
 Trigger the pipeline manually or set up webhooks for automated triggers.
 
-Access SonarQube:
+- Access SonarQube:
 
 After the pipeline runs, access SonarQube at http://localhost:9000 to view the code quality reports.
