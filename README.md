@@ -11,9 +11,6 @@
 - [Jenkins Pipeline](#jenkins-pipeline)
   - [Pipeline Stages](#pipeline-stages)
 - [Usage](#usage)
-- [Notes](#notes)
-- [External Resources](#external-resources)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -58,7 +55,7 @@ JENKINS_TOKEN=your-jenkins-token
 Note: Replace your-jenkins-token with your actual Jenkins token. Ensure this token is securely stored and managed.
 
 
-### Docker Compose Setup
+### 3. Docker Compose Setup
 
 
 The provided docker-compose.yml sets up the following services:
